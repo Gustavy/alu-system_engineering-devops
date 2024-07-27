@@ -16,8 +16,8 @@ frontend gustave-frontend
         default_backend gustave-backend
 backend gustave-backend
         balance roundrobin
-        server 6238-web-01 54.196.216.8:80 check
-        server 6238-web-02 98.80.15.59:80 check
+        server 6238-web-01 3.80.122.234:80 check
+        server 6238-web-02 54.159.37.89:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
